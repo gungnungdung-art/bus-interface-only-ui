@@ -1,0 +1,31 @@
+appId: com.ibms.busdriverinterface
+productName: IBMS Driver Interface
+directories:
+  output: release
+files:
+  - dist/**
+  - electron/**
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+nsis:
+  oneClick: true
+  perMachine: false
+
+# Windows에서 크로스 빌드 가능한 리눅스 타깃은 AppImage
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+        - arm64
+  category: Utility

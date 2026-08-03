@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "IBMS: Electron Development",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "npm run dev",
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"name": "IBMS: Browser only (Vite)",
+			"type": "node-terminal",
+			"request": "launch",
+			"command": "npm run dev:web",
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}

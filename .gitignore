@@ -1,0 +1,26 @@
+# ── Node / 프론트엔드 ────────────────────────────────────────────────────────
+node_modules/
+dist/
+release/
+*.tsbuildinfo
+.vite/
+
+# ── 로그 / 런타임 산출물 ────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── 환경변수 (Vite 가 자동으로 읽으므로 절대 커밋 금지) ─────────────────────
+.env
+.env.*
+!.env.example
+
+# ── 편집기 / OS ─────────────────────────────────────────────────────────────
+# .vscode 는 공유한다 (launch.json 이 팀 공용 설정)
+.vscode/*.local.json
+.idea/
+*.swp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
